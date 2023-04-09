@@ -1,9 +1,14 @@
 import os
+import aiohttp
 from os import getenv
 from dotenv import load_dotenv
 
 if os.path.exists("Internal"):
     load_dotenv("Internal")
+
+aiohttpsession = aiohttp.ClientSession()
+que = {}
+admins = {}
 
 load_dotenv()
 admins = {}
@@ -26,3 +31,5 @@ DURATION_LIMIT = int(getenv("DURATION_LIMIT", "120"))
 UPSTREAM_REPO = getenv("UPSTREAM_REPO", "")
 IMG = getenv("IMG", "https://telegra.ph//file/a855ceaa3910d17a3174a.jpg")
 YOUTUBE_IMG_URL = getenv("YOUTUBE_IMG_URL", "https://telegra.ph//file/a855ceaa3910d17a3174a.jpg")
+
+aiohttpsession = aiohttp.ClientSession()
