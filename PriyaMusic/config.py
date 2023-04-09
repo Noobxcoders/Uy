@@ -10,8 +10,6 @@ aiohttpsession = aiohttp.ClientSession()
 que = {}
 admins = {}
 
-load_dotenv()
-admins = {}
 SESSION_NAME = getenv("SESSION_NAME", "")
 BOT_TOKEN = getenv("BOT_TOKEN", "")
 BOT_NAME = getenv("BOT_NAME", "ᴘʀɪʏᴀ ᴍᴜsɪᴄ")
